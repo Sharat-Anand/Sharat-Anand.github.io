@@ -3,32 +3,20 @@
 
 @import "{{ site.theme }}";
 
-/* Your custom overrides */
-body { background: #ffffff; }
-
-.wrapper { max-width: 980px; }
-
-.page-content { padding: 12px 0; }
-
-h1, h2, h3 {
-  margin-top: 0.8rem;
-  margin-bottom: 0.35rem;
+/* FORCE light background everywhere */
+html, body {
+  background: #ffffff !important;
 }
 
-p { margin: 0.45rem 0; }
-
-.site-header { border-top: 0; }
-
-.site-title {
-  font-weight: 700;
-  letter-spacing: -0.02em;
+/* Minima often uses this wrapper for the visible page */
+.page-content,
+.wrapper,
+.site-header,
+.site-footer {
+  background: #ffffff !important;
 }
 
-.site-nav .page-link {
-  font-weight: 500;
-  color: #0369a1;
-}
-
-.site-nav .page-link:hover {
-  text-decoration: underline;
+/* Optional: ensure text stays dark */
+body {
+  color: #0f172a;
 }
